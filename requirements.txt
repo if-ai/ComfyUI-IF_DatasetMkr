@@ -4,10 +4,14 @@ pillow>=10.0.0
 numpy>=1.24.0
 huggingface_hub>=0.26.0
 # AutoAWQ with specific version - MUST be installed before transformers
-autoawq
-# Transformers - MUST be installed after AutoAWQ
-transformers
-accelerate>=0.21.0
+# flash-attn>=2.0.0;platform_system!="Darwin"  # Optional for performance, excluded on MacOS
+# triton
+# autoawq
+
+# Transformers and related
+git+https://github.com/huggingface/transformers
+accelerate
+sentence-transformers
 
 # Qwen model dependencies
 tokenizers>=0.15.0
