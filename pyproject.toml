@@ -1,14 +1,55 @@
 [project]
 name = "comfyui-if_datasetmkr"
-description = "Create Video datasets staright from YT or a video file path"
-version = "0.1.4"
+description = "Create Video datasets straight from YT or a video file path"
+version = "0.1.9"
 license = { file = "MIT License" }
-dependencies = ["yt-dlp", "scenedetect", "python-slugify", "tqdm", "requests", "opencv-python", "qwen-vl-utils", "ffmpeg-python", "imageio_ffmpeg>=0.6.0", "moviepy>=2.1.2"]
+dependencies = [
+    # Core dependencies
+    "torch>=2.0.0",
+    "pillow>=10.0.0",
+    "numpy>=1.24.0",
+    "huggingface_hub>=0.26.0",
+    
+    # AutoAWQ with specific version - MUST be installed before transformers
+    # "flash-attn>=2.0.0;platform_system!='Darwin'",  # Optional for performance, excluded on MacOS
+    # "triton",
+    # "autoawq",
+    
+    # Transformers and related
+    "git+https://github.com/huggingface/transformers",
+    "accelerate",
+    "sentence-transformers",
+    
+    # Qwen model dependencies
+    "tokenizers>=0.15.0",
+    "safetensors>=0.3.1",
+    "qwen-vl-utils[decord]>=0.0.8",
+    
+    # Video processing
+    "opencv-python>=4.8.0",
+    "decord>=0.6.0",
+    "ffmpeg-python>=0.2.0",
+    "imageio_ffmpeg>=0.6.0",
+    "moviepy>=2.1.2",
+    "scenedetect>=0.6.2",
+    
+    # Downloading
+    "yt-dlp>=2023.3.4",
+    
+    # Utilities
+    "tqdm>=4.66.1",
+    "requests>=2.31.0",
+    "python-slugify>=8.0.1",
+    "psutil>=5.9.0",
+    "packaging>=23.1",
+    "aiohttp>=3.8.5",
+    "dotenv-python>=0.0.1",
+]
 
 [project.urls]
 Repository = "https://github.com/if-ai/ComfyUI-IF_DatasetMkr"
-#  Used by Comfy Registry https://comfyregistry.org
 
+# Used by Comfy Registry https://comfyregistry.org
 [tool.comfy]
 PublisherId = "impactframes"
 DisplayName = "IF_DatasetMkr"
