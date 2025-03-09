@@ -1,7 +1,7 @@
 [project]
 name = "comfyui-if_datasetmkr"
 description = "Create Video datasets staright from YT or a video file path"
-version = "0.1.0"
+version = "0.1.1"
 license = {file = "LICENSE"}
 dependencies = ["yt-dlp", "scenedetect", "python-slugify", "tqdm", "requests", "opencv-python", "qwen-vl-utils", "ffmpeg-python", "imageio_ffmpeg>=0.6.0", "moviepy>=2.1.2"]
 
@@ -11,5 +11,5 @@ Repository = "https://github.com/if-ai/ComfyUI-IF_DatasetMkr"
 
 [tool.comfy]
 PublisherId = "impactframes"
-DisplayName = "impactframes"
+DisplayName = "dataset maker"
 Icon = "https://impactframes.ai/System/Icons/48x48/if.png"
