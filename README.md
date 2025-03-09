@@ -50,6 +50,16 @@ cd ComfyUI-IF_VideoDatasetMaker
 pip install -r requirements.txt
 ```
 
+If you want to use AWQ to save VRAM and up to 3x faster inference
+you need to install triton and autoawq
+
+```
+pip install triton
+pip install --no-deps autoawq
+```
+
+
+
 3. Restart ComfyUI
 
 ## Dependencies
