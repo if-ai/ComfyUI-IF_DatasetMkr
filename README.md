@@ -3,6 +3,7 @@
 <img src="https://count.getloli.com/get/@IFAIDATASET_comfy?theme=moebooru" alt=":IFAIDATASET_comfy" />
 
 An advanced ComfyUI node that converts video files or YouTube links into well-structured training datasets for AI image generation models.
+This tool is based on the work done by [zsxkib](https://github.com/zsxkib) in their repository [cog-create-video-dataset](https://github.com/zsxkib/cog-create-video-dataset).
 
 ## Overview
 
