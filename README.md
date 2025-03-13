@@ -40,14 +40,14 @@ Perfect for creating training datasets for HyperNetworks, LoRAs, Dreambooth or o
 1. Clone this repository to your ComfyUI custom_nodes directory:
 
 ```bash
-cd ComfyUI/custom_nodes
-git clone https://github.com/yourusername/ComfyUI-IF_VideoDatasetMaker.git
+cd ./custom_nodes
+git clone https://github.com/if-ai/ComfyUI-IF_DatasetMkr.git
 ```
 
 2. Install the required dependencies:
 
 ```bash
-cd ComfyUI-IF_VideoDatasetMaker
+cd ./ComfyUI-IF_DatasetMkr.
 pip install -r requirements.txt
 ```
 
@@ -56,7 +56,7 @@ you need to install triton and autoawq
 
 ```
 pip install triton
-pip install --no-deps autoawq
+pip install --no-deps --no-build-isolation autoawq
 ```
 
 
