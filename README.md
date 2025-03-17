@@ -181,8 +181,8 @@ dotenv-python>=0.0.1
 
 If you find this tool useful, please consider supporting my work by:
 * Starring the repository on GitHub: [ComfyUI-IF_VideoPrompts](https://github.com/yourusername/ComfyUI-IF_VideoPrompts)
-* Subscribing to my YouTube channel: [Impact Frames](https://youtube.com/c/impactframes)
-* Follow me on X: [Impact Frames X](https://x.com/impactframes)
+- Subscribing to my YouTube channel: [Impact Frames](https://youtube.com/@impactframes?si=DrBu3tOAC2-YbEvc)
+- Follow me on X: [Impact Frames X](https://x.com/impactframesX)
 
 Thank You!
 
